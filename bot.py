@@ -1,15 +1,16 @@
+import os
 from telegram.ext import ApplicationBuilder, MessageHandler, filters
 from chatbot import get_response
 
-BOT_TOKEN = "7666255819:AAGSV0BXYWBvNxSZ0L6hLnIoD_TNweGyb8k"
+TOKEN = os.environ.get("7666255819:AAGSV0BXYWBvNxSZ0L6hLnIoD_TNweGyb8k")
 
-async def handle_message(update, context):
-    user_text = update.message.text
-    reply = get_response(user_text)
-    await update.message.reply_text(reply)
+async def reply(update, context):
+    text = update.message.text
+    response = get_response(text)
+    await update.message.reply_text(response)
 
-app = ApplicationBuilder().token(BOT_TOKEN).build()
-app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+app = ApplicationBuilder().token(TOKEN).build()
+app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, reply))
 
-print("Bot is running...")
+print("Bot running on Railway...")
 app.run_polling()
