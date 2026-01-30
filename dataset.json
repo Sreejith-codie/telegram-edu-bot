@@ -1,0 +1,65 @@
+{
+  "intents": [
+    {
+      "tag": "ai",
+      "patterns": [
+        "what is ai",
+        "define artificial intelligence",
+        "explain ai"
+      ],
+      "responses": [
+        "Artificial Intelligence is the simulation of human intelligence by machines."
+      ]
+    },
+    {
+      "tag": "python",
+      "patterns": [
+        "what is python",
+        "define python",
+        "python programming"
+      ],
+      "responses": [
+        "Python is a high-level programming language widely used for software development."
+      ]
+    },
+    {
+      "tag": "nlp",
+      "patterns": [
+        "what is nlp",
+        "define natural language processing"
+      ],
+      "responses": [
+        "Natural Language Processing enables machines to understand human language."
+      ]
+    },
+    {
+      "tag": "notes",
+      "patterns": [
+        "ai notes",
+        "python notes",
+        "study notes"
+      ],
+      "responses": [
+        "You can download notes here: https://example.com/notes.pdf"
+      ]
+    },
+    {
+      "tag": "question_paper",
+      "patterns": [
+        "python question paper",
+        "ai question paper",
+        "previous year questions"
+      ],
+      "responses": [
+        "Download question paper here: https://example.com/questionpaper.pdf"
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "Sorry, I could not understand your question. Please try again."
+      ]
+    }
+  ]
+}
