@@ -1,7 +1,7 @@
 from telegram.ext import ApplicationBuilder, MessageHandler, filters
 from chatbot import get_response
 
-BOT_TOKEN = "PASTE_YOUR_BOT_TOKEN_HERE"
+BOT_TOKEN = "7666255819:AAGSV0BXYWBvNxSZ0L6hLnIoD_TNweGyb8k"
 
 async def handle_message(update, context):
     user_text = update.message.text
